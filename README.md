@@ -5,6 +5,7 @@ A comprehensive TypeScript library for mastering Data Structures and Algorithms 
 ## 🚀 Quick Start
 
 **New here?** Start with the [**Getting Started Guide**](./GETTING_STARTED.md) to learn:
+
 - How to install and set up the project
 - Recommended learning path (Beginner → Intermediate → Advanced)
 - Common commands and workflows
@@ -13,6 +14,7 @@ A comprehensive TypeScript library for mastering Data Structures and Algorithms 
 ## 🎯 Overview
 
 This repository contains:
+
 - **Data Structures**: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables, Heaps, etc.
 - **Algorithms**: Sorting, Searching, Dynamic Programming, Greedy, Backtracking, Graph Algorithms
 - **LeetCode Solutions**: 100+ curated LeetCode problems with detailed explanations
@@ -87,6 +89,7 @@ typescript-dsa-leetcode-mastery/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 # Replace <repository-url> with the repository HTTP/SSH URL
 git clone <repository-url>
@@ -95,11 +98,13 @@ cd typescript-dsa-leetcode-mastery
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Build the project:
+
 ```bash
 npm run build
 ```
@@ -183,18 +188,21 @@ console.log(twoSum(nums, target)); // Output: [0, 1]
 ## 🎓 Learning Path
 
 ### Beginner
+
 - Arrays and Strings
 - Basic Sorting and Searching
 - Stacks and Queues
 - Linked Lists
 
 ### Intermediate
+
 - Trees and Binary Search Trees
 - Graphs and Graph Traversal
 - Dynamic Programming Basics
 - Common Patterns (Two Pointers, Sliding Window)
 
 ### Advanced
+
 - Advanced Graph Algorithms (Dijkstra, BFS/DFS)
 - Complex Dynamic Programming
 - Greedy Algorithms
@@ -244,18 +252,18 @@ Documentation will be available in the `docs/` directory.
 
 ## ⚡ Quick Commands Reference
 
-| Command | Description |
-|---------|-------------|
-| `npm install` | Install all dependencies |
-| `npm run build` | Compile TypeScript to JavaScript |
-| `npm run dev` | Watch mode for development |
-| `npm test` | Run all tests |
-| `npm run test:coverage` | Generate coverage report |
-| `npm run lint` | Check code quality |
-| `npm run lint:fix` | Fix linting issues |
-| `npm run format` | Format code with Prettier |
-| `npm run clean` | Remove build artifacts |
-| `npm run docs` | Generate documentation |
+| Command                 | Description                      |
+| ----------------------- | -------------------------------- |
+| `npm install`           | Install all dependencies         |
+| `npm run build`         | Compile TypeScript to JavaScript |
+| `npm run dev`           | Watch mode for development       |
+| `npm test`              | Run all tests                    |
+| `npm run test:coverage` | Generate coverage report         |
+| `npm run lint`          | Check code quality               |
+| `npm run lint:fix`      | Fix linting issues               |
+| `npm run format`        | Format code with Prettier        |
+| `npm run clean`         | Remove build artifacts           |
+| `npm run docs`          | Generate documentation           |
 
 ## 📄 License
 

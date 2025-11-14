@@ -1,10 +1,10 @@
 /**
  * ARRAYS - BASIC CONCEPTS AND OPERATIONS
- * 
+ *
  * What is an Array?
  * An array is a collection of elements stored in contiguous memory locations.
  * Each element can be accessed using an index (position number).
- * 
+ *
  * Key Properties:
  * - Fixed or Dynamic size (TypeScript arrays are dynamic)
  * - Zero-indexed (first element is at index 0)
@@ -15,7 +15,7 @@
 
 /**
  * DUMB EXPLANATION: What is an Array?
- * 
+ *
  * Imagine a row of mailboxes on a street:
  * - Each mailbox holds something (mail, packages, etc.)
  * - Each mailbox has a number (0, 1, 2, 3...)
@@ -23,7 +23,7 @@
  * - Adding a mailbox at the beginning requires moving everything
  * - Adding a mailbox at the end is easy
  * - Removing a mailbox from the middle leaves a gap you must fill
- * 
+ *
  * That's basically an array!
  */
 
@@ -129,11 +129,7 @@ export function findIndex(arr: number[], value: number): number {
  * INSERT: Add element at specific position
  * Time Complexity: O(n) - need to shift elements
  */
-export function insertAt(
-  arr: number[],
-  index: number,
-  value: number
-): number[] {
+export function insertAt(arr: number[], index: number, value: number): number[] {
   if (index < 0 || index > arr.length) {
     throw new Error('Index out of bounds');
   }
@@ -323,7 +319,7 @@ export function reverseArray(arr: number[]): number[] {
 export function rotateRight(arr: number[], k: number): number[] {
   const n = arr.length;
   if (n === 0) return arr;
-  
+
   k = k % n; // Handle k > array length
   if (k === 0) return arr;
 
@@ -342,9 +338,9 @@ export function rotateRight(arr: number[], k: number): number[] {
     }
   };
 
-  reverse(0, n - 1);           // Reverse entire array
-  reverse(0, k - 1);           // Reverse first k elements
-  reverse(k, n - 1);           // Reverse remaining elements
+  reverse(0, n - 1); // Reverse entire array
+  reverse(0, k - 1); // Reverse first k elements
+  reverse(k, n - 1); // Reverse remaining elements
 
   return arr;
 }
@@ -353,7 +349,7 @@ export function rotateRight(arr: number[], k: number): number[] {
  * DUMB EXPLANATION: Rotating an array
  * Original: [1, 2, 3, 4, 5]
  * Rotate right by 2: [4, 5, 1, 2, 3]
- * 
+ *
  * Think of it like a circular list - items shift to the right,
  * and items that fall off the right end wrap around to the left!
  */

@@ -17,6 +17,7 @@ Describe the change and why it is needed. Link related issues/PRs if any.
 ### Implementation notes
 
 Any implementation notes, caveats, or decisions made during development.
+
 <!-- Please replace the sections below and remove this comment block before submitting -->
 
 ## Summary
@@ -24,6 +25,7 @@ Any implementation notes, caveats, or decisions made during development.
 <!-- Brief description of the change and why it is needed -->
 
 ## Type of change
+
 - [ ] Bug fix
 - [ ] New feature
 - [ ] Documentation update
@@ -31,18 +33,22 @@ Any implementation notes, caveats, or decisions made during development.
 - [ ] Other (please describe):
 
 ## Related issues
+
 <!-- Link any related issues, e.g. Closes #123 -->
 
 ## How has this been tested?
+
 - [ ] Unit tests added or updated
 - [ ] Manual testing
 - [ ] CI passes
 
 ## Checklist
+
 - [ ] I have followed the contribution guidelines in `CONTRIBUTING.md`.
 - [ ] My code is formatted (run `npm run format`).
 - [ ] I have added tests where applicable and all tests pass.
 - [ ] I assigned appropriate reviewers and labels.
 
 ## Notes for reviewers
+
 <!-- Any specific areas to focus the review on -->

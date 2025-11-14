@@ -5,6 +5,7 @@ This repository includes a GitHub Actions workflow (`.github/workflows/ci.yml`) 
 ## Workflow Details
 
 The CI workflow runs on:
+
 - **Triggers**: Push to `main` or `develop` branches; all pull requests to `main` or `develop`.
 - **Matrix**: Node.js versions 18.x and 20.x (tests run in parallel for each version).
 - **Jobs**:
@@ -58,6 +59,7 @@ npm run format && npm run lint:fix && npm run build && npm test
 ## Customizing the Workflow
 
 To modify the workflow:
+
 1. Edit `.github/workflows/ci.yml`.
 2. Change node versions, add new steps, or adjust triggers as needed.
 3. Push the changes; the updated workflow will run on the next push/PR.
