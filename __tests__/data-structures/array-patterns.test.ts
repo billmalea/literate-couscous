@@ -238,7 +238,11 @@ describe('Array Patterns - Prefix Sum', () => {
 describe('Array Patterns - Matrix Traversal', () => {
   describe('Spiral Traversal', () => {
     it('should traverse 3x3 matrix in spiral', () => {
-      const matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+      const matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9],
+      ];
       expect(spiralTraversal(matrix)).toEqual([1, 2, 3, 6, 9, 8, 7, 4, 5]);
     });
 
@@ -263,21 +267,32 @@ describe('Array Patterns - Matrix Traversal', () => {
     });
 
     it('should traverse 2x3 matrix', () => {
-      const matrix = [[1, 2, 3], [4, 5, 6]];
+      const matrix = [
+        [1, 2, 3],
+        [4, 5, 6],
+      ];
       expect(spiralTraversal(matrix)).toEqual([1, 2, 3, 6, 5, 4]);
     });
   });
 
   describe('Find in Sorted Matrix', () => {
     it('should find element in sorted matrix', () => {
-      const matrix = [[1, 4, 7], [2, 5, 8], [3, 6, 9]];
+      const matrix = [
+        [1, 4, 7],
+        [2, 5, 8],
+        [3, 6, 9],
+      ];
       expect(findInSortedMatrix(matrix, 5)).toBe(true);
       expect(findInSortedMatrix(matrix, 1)).toBe(true);
       expect(findInSortedMatrix(matrix, 9)).toBe(true);
     });
 
     it('should return false for element not in matrix', () => {
-      const matrix = [[1, 4, 7], [2, 5, 8], [3, 6, 9]];
+      const matrix = [
+        [1, 4, 7],
+        [2, 5, 8],
+        [3, 6, 9],
+      ];
       expect(findInSortedMatrix(matrix, 10)).toBe(false);
       expect(findInSortedMatrix(matrix, 0)).toBe(false);
     });

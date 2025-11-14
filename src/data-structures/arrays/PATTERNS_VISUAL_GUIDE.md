@@ -18,6 +18,7 @@
 ## 1️⃣ TWO-POINTER PATTERN
 
 ### When to Use
+
 ✓ Remove duplicates from sorted array
 ✓ Move specific elements to end
 ✓ Reverse array
@@ -25,6 +26,7 @@
 ✓ Container/trapping problems
 
 ### Visual Example: Remove Duplicates
+
 ```
 Array: [1, 1, 2, 2, 3, 4, 4, 5]
                 ↓
@@ -37,11 +39,12 @@ Process:
  w  r   → 1==1, skip
  ↑     ↑
  w     r   → 2!=1, write at index 1
- 
+
 Result: [1, 2, 3, 4, 5]
 ```
 
 ### Complexity
+
 - Time: O(n)
 - Space: O(1)
 
@@ -50,12 +53,14 @@ Result: [1, 2, 3, 4, 5]
 ## 2️⃣ SLIDING WINDOW PATTERN
 
 ### When to Use
+
 ✓ Maximum/minimum of subarrays
 ✓ Longest/shortest substring with property
 ✓ Average of subarrays
 ✓ Counting subarrays
 
 ### Visual Example: Max Sum of Size k
+
 ```
 Array: [2, 1, 5, 1, 3, 2], k=3
 
@@ -73,6 +78,7 @@ Result: 9
 ```
 
 ### Complexity
+
 - Time: O(n)
 - Space: O(k) or O(1)
 
@@ -81,12 +87,14 @@ Result: 9
 ## 3️⃣ PREFIX SUM PATTERN
 
 ### When to Use
+
 ✓ Range sum queries (multiple queries)
 ✓ Find subarray with given sum
 ✓ Subarray sum = target
 ✓ Maximum subarray sum
 
 ### Visual Example: Range Queries
+
 ```
 Array:  [1, 2, 3, 4, 5]
                 ↓ build once
@@ -105,6 +113,7 @@ Answer = prefix[4] - prefix[1] = 10 - 1 = 9
 ```
 
 ### Complexity
+
 - Preprocessing: O(n)
 - Per Query: O(1)
 - Space: O(n)
@@ -114,12 +123,14 @@ Answer = prefix[4] - prefix[1] = 10 - 1 = 9
 ## 4️⃣ MATRIX TRAVERSAL PATTERN
 
 ### When to Use
+
 ✓ Spiral traversal
 ✓ Find in sorted 2D matrix
 ✓ Layer-by-layer traversal
 ✓ Rotate matrix
 
 ### Visual Example: Spiral Traversal
+
 ```
 Matrix:
 ┌───┬───┬───┐
@@ -147,6 +158,7 @@ bottom↑
 ```
 
 ### Complexity
+
 - Time: O(m × n)
 - Space: O(1)
 
@@ -155,12 +167,14 @@ bottom↑
 ## 5️⃣ HASH MAP PATTERN
 
 ### When to Use
+
 ✓ Count occurrences/frequencies
 ✓ Two-sum problems
 ✓ Track positions/indices
 ✓ Anagram detection
 
 ### Visual Example: Two Sum with Hash Map
+
 ```
 Array: [2, 7, 11, 15], target=9
 
@@ -181,6 +195,7 @@ Time: O(n) vs O(n²) brute force!
 ```
 
 ### Complexity
+
 - Time: O(n)
 - Space: O(k) where k = unique elements
 
@@ -189,12 +204,14 @@ Time: O(n) vs O(n²) brute force!
 ## 6️⃣ SORTING + BINARY SEARCH
 
 ### When to Use
+
 ✓ Two-sum after sorting
 ✓ Searching in sorted array
 ✓ Multiple queries on same data
 ✓ Finding ranges
 
 ### Visual Example: Two Sum with Sorting
+
 ```
 Array: [3, 2, 4, 1, 5], target=7
 
@@ -219,6 +236,7 @@ Time: O(n log n) for sort
 ```
 
 ### Complexity
+
 - Time: O(n log n)
 - Space: depends on sorting algorithm
 
@@ -258,20 +276,20 @@ START: Analyze the problem
 
 ## 📋 PATTERN CHEATSHEET
 
-| Pattern | Problem | Time | Space | Example |
-|---------|---------|------|-------|---------|
-| Two-Pointer | Remove Duplicates | O(n) | O(1) | [1,1,2,2,3] → [1,2,3] |
-| Two-Pointer | Move Zeros | O(n) | O(1) | [0,1,0,3,12] → [1,3,12,0,0] |
-| Two-Pointer | Container | O(n) | O(1) | Max water area |
-| Sliding Window | Max Sum Size k | O(n) | O(1) | [2,1,5,1,3,2], k=3 → 9 |
-| Sliding Window | Longest Substring | O(n) | O(k) | "abcabcbb" → 3 |
-| Prefix Sum | Range Sum | O(n) setup, O(1) query | O(n) | Query sum[i:j] |
-| Prefix Sum | Subarray Sum=k | O(n) | O(n) | Find subarray |
-| Matrix Traversal | Spiral | O(m*n) | O(1) | Clockwise spiral |
-| Matrix Traversal | Find Sorted 2D | O(m+n) | O(1) | Binary search 2D |
-| Hash Map | Two Sum | O(n) | O(n) | Find pair=target |
-| Hash Map | Longest Substring | O(n) | O(k) | Track duplicates |
-| Sort + Search | Two Sum | O(n log n) | O(1) | After sort |
+| Pattern          | Problem           | Time                   | Space | Example                     |
+| ---------------- | ----------------- | ---------------------- | ----- | --------------------------- |
+| Two-Pointer      | Remove Duplicates | O(n)                   | O(1)  | [1,1,2,2,3] → [1,2,3]       |
+| Two-Pointer      | Move Zeros        | O(n)                   | O(1)  | [0,1,0,3,12] → [1,3,12,0,0] |
+| Two-Pointer      | Container         | O(n)                   | O(1)  | Max water area              |
+| Sliding Window   | Max Sum Size k    | O(n)                   | O(1)  | [2,1,5,1,3,2], k=3 → 9      |
+| Sliding Window   | Longest Substring | O(n)                   | O(k)  | "abcabcbb" → 3              |
+| Prefix Sum       | Range Sum         | O(n) setup, O(1) query | O(n)  | Query sum[i:j]              |
+| Prefix Sum       | Subarray Sum=k    | O(n)                   | O(n)  | Find subarray               |
+| Matrix Traversal | Spiral            | O(m\*n)                | O(1)  | Clockwise spiral            |
+| Matrix Traversal | Find Sorted 2D    | O(m+n)                 | O(1)  | Binary search 2D            |
+| Hash Map         | Two Sum           | O(n)                   | O(n)  | Find pair=target            |
+| Hash Map         | Longest Substring | O(n)                   | O(k)  | Track duplicates            |
+| Sort + Search    | Two Sum           | O(n log n)             | O(1)  | After sort                  |
 
 ---
 
@@ -324,6 +342,7 @@ START: Analyze the problem
 ## 💡 PRO TIPS
 
 ### Tip 1: Sort First?
+
 ```
 ✗ BEFORE sorting: [3, 2, 4, 1, 5]
 ✓ AFTER sorting:  [1, 2, 3, 4, 5]
@@ -331,6 +350,7 @@ START: Analyze the problem
 ```
 
 ### Tip 2: Track Boundaries (for matrix)
+
 ```
 Don't get lost! Always maintain:
 - top (row starting point)
@@ -340,6 +360,7 @@ Don't get lost! Always maintain:
 ```
 
 ### Tip 3: Hash Map for Duplicates
+
 ```
 Before: Loop = O(n²)
 After:  Hash Map = O(n)
@@ -347,6 +368,7 @@ After:  Hash Map = O(n)
 ```
 
 ### Tip 4: Prefix Sum Trick
+
 ```
 Sum[i:j] = prefix[j+1] - prefix[i]
 Remember: +1 on right, direct on left!

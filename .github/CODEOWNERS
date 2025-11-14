@@ -1,23 +1,34 @@
 # Code owners file
+
 # Lines starting with '#' are comments and ignored
+
 # Use GitHub usernames or teams to require reviews from specific people
 
 # Default owners for most code
-*       @billmalea
+
+-       @billmalea
 
 # Directory-specific owners (examples)
-src/*   @billmalea
-docs/*  @billmalea
+
+src/_ @billmalea
+docs/_ @billmalea
 
 # If you have a GitHub team, you can specify it like:
+
 # /src/ @org/team-name
+
 # CODEOWNERS
+
 # This file assigns code owners who will be requested for review when changes
+
 # are made to files they own. Use GitHub usernames or team slugs (e.g. @org/team).
 
 # Default owner for the entire repository
-* @billmalea
+
+- @billmalea
 
 # You can map specific folders to owners, for example:
+
 # /src/data-structures/ @org/dsa-team
+
 # /docs/ @org/docs-team

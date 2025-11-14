@@ -9,9 +9,11 @@ I've created a comprehensive **Arrays learning module** with everything you need
 ## 📁 Files Created
 
 ### 1. **array-basics.ts** (427 lines)
+
 Complete implementation of fundamental array operations with clear explanations:
 
 **Topics Covered:**
+
 - Array creation (empty, with values, with size, from other sources)
 - Basic operations: access, search, insert, delete, append
 - Array traversal: linear search, sum, min/max
@@ -19,44 +21,50 @@ Complete implementation of fundamental array operations with clear explanations:
 - Utility functions: isSorted, contains, isEmpty
 
 **Key Functions:**
+
 ```typescript
-createEmptyArray()                  // Create array
-getElement(arr, index)              // O(1) access
-linearSearch(arr, target)           // O(n) search
-insertAt(arr, index, value)         // O(n) insert in middle
-deleteAt(arr, index)                // O(n) delete from middle
-append(arr, value)                  // O(1) append
-sumArray(arr)                       // O(n) sum
-findMax(arr)                        // O(n) find max
-reverseArray(arr)                   // O(n) reverse
-rotateRight(arr, k)                 // O(n) rotate
-removeDuplicates(arr)               // O(n) remove duplicates
+createEmptyArray(); // Create array
+getElement(arr, index); // O(1) access
+linearSearch(arr, target); // O(n) search
+insertAt(arr, index, value); // O(n) insert in middle
+deleteAt(arr, index); // O(n) delete from middle
+append(arr, value); // O(1) append
+sumArray(arr); // O(n) sum
+findMax(arr); // O(n) find max
+reverseArray(arr); // O(n) reverse
+rotateRight(arr, k); // O(n) rotate
+removeDuplicates(arr); // O(n) remove duplicates
 ```
 
 ---
 
 ### 2. **array-patterns.ts** (350+ lines)
+
 Advanced patterns for solving array problems efficiently:
 
 **6 Major Patterns:**
 
 #### Pattern 1: Two-Pointer
+
 - Remove duplicates from sorted array
 - Move zeros to end
 - Container with most water (max area problem)
 - **Use when:** Need to track pairs or move elements in sorted arrays
 
 #### Pattern 2: Sliding Window
+
 - Maximum sum of subarray of size k
 - Longest substring without repeating characters
 - **Use when:** Finding optimal subarrays or substrings
 
 #### Pattern 3: Prefix Sum
+
 - Build prefix sum array for range queries
 - Find subarray with given sum
 - **Use when:** Multiple range queries or subarray sum problems
 
 #### Pattern 4: Matrix Traversal
+
 - Spiral traversal (clockwise from outside)
 - Find element in sorted 2D matrix
 - **Use when:** Working with 2D arrays or matrices
@@ -64,9 +72,11 @@ Advanced patterns for solving array problems efficiently:
 ---
 
 ### 3. **ARRAYS.md** (500+ lines)
+
 Complete, beginner-friendly guide with:
 
 **Sections:**
+
 - What is an Array? (with "dumb explanation")
 - Basic Concepts (creation, access, modification)
 - Array Operations (search, reverse, sum, min/max)
@@ -76,6 +86,7 @@ Complete, beginner-friendly guide with:
 - Tips & Tricks
 
 **Special Features:**
+
 - Visual representations of how arrays work
 - Step-by-step walkthroughs of algorithms
 - Real-world analogies (mailbox example!)
@@ -84,6 +95,7 @@ Complete, beginner-friendly guide with:
 ---
 
 ### 4. **PATTERNS_CHEATSHEET.ts** (250+ lines)
+
 Quick reference guide for choosing the right pattern:
 
 - When to use each pattern
@@ -97,7 +109,9 @@ Quick reference guide for choosing the right pattern:
 ### 5. **Test Files**
 
 #### array-basics.test.ts (45 test cases)
+
 Tests for all basic operations:
+
 - Array creation
 - Access & search
 - Insertion & deletion
@@ -106,7 +120,9 @@ Tests for all basic operations:
 - Utility functions
 
 #### array-patterns.test.ts (45 test cases)
+
 Tests for all patterns:
+
 - Two-pointer (remove duplicates, move zeros, max area)
 - Sliding window (max sum, longest substring)
 - Prefix sum (build, query, find subarray)
@@ -120,14 +136,14 @@ Tests for all patterns:
 
 ### Time Complexity Summary
 
-| Operation | Time | Why |
-|-----------|------|-----|
-| Access by index | O(1) | Direct memory lookup |
-| Insert at end | O(1) | No shifting needed |
-| Insert in middle | O(n) | Must shift elements |
-| Delete from middle | O(n) | Must shift elements |
-| Linear search | O(n) | Check each element |
-| Sum/Min/Max | O(n) | Visit all elements |
+| Operation          | Time | Why                  |
+| ------------------ | ---- | -------------------- |
+| Access by index    | O(1) | Direct memory lookup |
+| Insert at end      | O(1) | No shifting needed   |
+| Insert in middle   | O(n) | Must shift elements  |
+| Delete from middle | O(n) | Must shift elements  |
+| Linear search      | O(n) | Check each element   |
+| Sum/Min/Max        | O(n) | Visit all elements   |
 
 ### The 6 Array Patterns
 
@@ -145,7 +161,7 @@ Tests for all patterns:
 
 4. **Matrix Traversal** - Navigate 2D arrays layer by layer
    - Best for: 2D matrix problems
-   - Time: O(m*n), Space: O(1)
+   - Time: O(m\*n), Space: O(1)
 
 5. **Hash Map** - Track frequencies/positions
    - Best for: Duplicates, two-sum variants
@@ -160,18 +176,21 @@ Tests for all patterns:
 ## 🚀 How to Use This Section
 
 ### For Beginners
+
 1. Start with **ARRAYS.md** - Read "What is an Array?" section
 2. Study **array-basics.ts** - Understand basic operations
 3. Run tests: `npm test -- array-basics`
 4. Do practice problems in ARRAYS.md (Easy level)
 
 ### For Intermediate Learners
+
 1. Read **PATTERNS_CHEATSHEET.ts** - Understand when to use each pattern
 2. Study **array-patterns.ts** - Learn how each pattern works
 3. Run pattern tests: `npm test -- array-patterns`
 4. Do practice problems (Medium level)
 
 ### For Advanced Learners
+
 1. Review all patterns quickly
 2. Try hard-level practice problems
 3. Combine patterns for complex problems
@@ -212,6 +231,7 @@ Week 4: Advanced
 ## 📝 Example Usage
 
 ### Example 1: Remove Duplicates
+
 ```typescript
 import { removeDuplicatesSorted } from './array-patterns';
 
@@ -221,6 +241,7 @@ console.log(result); // [1, 2, 3, 4, 5]
 ```
 
 ### Example 2: Maximum Sum of Subarray
+
 ```typescript
 import { maxSumSubarray } from './array-patterns';
 
@@ -230,6 +251,7 @@ console.log(max); // 9 (from subarray [5, 1, 3])
 ```
 
 ### Example 3: Two Sum
+
 ```typescript
 import { findSubarrayWithSum } from './array-patterns';
 
@@ -284,6 +306,7 @@ npm test -- --coverage array
 ## 🎓 What You'll Learn
 
 After mastering this section, you'll be able to:
+
 - ✅ Understand array data structure deeply
 - ✅ Implement all basic array operations
 - ✅ Apply 6 major problem-solving patterns
@@ -297,6 +320,7 @@ After mastering this section, you'll be able to:
 ## Next Steps
 
 Once you've mastered arrays, explore:
+
 - **Linked Lists** - Similar concepts, different structure
 - **Sorting Algorithms** - Often combined with arrays
 - **Searching Algorithms** - Binary search, etc.

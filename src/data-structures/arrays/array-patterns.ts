@@ -1,12 +1,12 @@
 /**
  * ARRAYS - ADVANCED MANIPULATION AND PATTERNS
- * 
+ *
  * Common patterns and techniques for solving array problems efficiently.
  */
 
 /**
  * TWO-POINTER PATTERN
- * 
+ *
  * DUMB EXPLANATION:
  * Imagine you have a sorted list and you're looking for two numbers.
  * Instead of checking every pair (slow!), you use two pointers:
@@ -20,7 +20,7 @@
  * TWO-POINTER: Remove duplicates from sorted array
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
+ *
  * The trick: Use one pointer to write unique values, another to read
  */
 export function removeDuplicatesSorted(arr: number[]): number[] {
@@ -44,7 +44,7 @@ export function removeDuplicatesSorted(arr: number[]): number[] {
  * EXAMPLE:
  * removeDuplicatesSorted([1, 1, 2, 2, 3, 4, 4, 5])
  * Returns: [1, 2, 3, 4, 5]
- * 
+ *
  * How it works:
  * - writeIndex=0 (pointing to 1), readIndex=1 (pointing to 1)
  *   1 == 1, so skip
@@ -90,7 +90,7 @@ export function moveZeroes(arr: number[]): number[] {
  * TWO-POINTER: Container with most water
  * Time Complexity: O(n)
  * Space Complexity: O(1)
- * 
+ *
  * PROBLEM: Given array of heights, find two lines that can hold most water.
  * Water area = min(height[left], height[right]) * (right - left)
  */
@@ -137,7 +137,7 @@ export function maxArea(heights: number[]): number {
  * [▓▓▓]  <- Window of size 3
  *   [▓▓▓]  <- Slide right
  *     [▓▓▓]  <- Slide right again
- * 
+ *
  * Instead of recalculating for each window, you:
  * - Remove element leaving from the left
  * - Add element entering from the right
@@ -227,7 +227,7 @@ export function longestNonRepeatingSubstring(str: string): number {
  *            |  |  sum of first 3
  *            |  sum of first 2
  *            sum of first 1
- * 
+ *
  * Now you can answer "sum from index i to j" in O(1)!
  */
 
@@ -256,11 +256,7 @@ export function buildPrefixSum(arr: number[]): number[] {
  * Query range sum using prefix sum array
  * Time Complexity: O(1) after preprocessing
  */
-export function getRangeSum(
-  prefix: number[],
-  left: number,
-  right: number
-): number {
+export function getRangeSum(prefix: number[], left: number, right: number): number {
   // Sum from index left to right = prefix[right+1] - prefix[left]
   return prefix[right + 1] - prefix[left];
 }
@@ -277,10 +273,7 @@ export function getRangeSum(
  * Time Complexity: O(n)
  * Space Complexity: O(n)
  */
-export function findSubarrayWithSum(
-  arr: number[],
-  target: number
-): [number, number] | null {
+export function findSubarrayWithSum(arr: number[], target: number): [number, number] | null {
   const sumToIndex: Map<number, number> = new Map();
   sumToIndex.set(0, -1); // Base case: sum 0 at index -1
 
@@ -372,10 +365,7 @@ export function spiralTraversal(matrix: number[][]): number[] {
  * Time Complexity: O(m + n)
  * Space Complexity: O(1)
  */
-export function findInSortedMatrix(
-  matrix: number[][],
-  target: number
-): boolean {
+export function findInSortedMatrix(matrix: number[][], target: number): boolean {
   if (matrix.length === 0) return false;
 
   // Start from top-right corner (or bottom-left)
