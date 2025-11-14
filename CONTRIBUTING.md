@@ -123,6 +123,38 @@ Closes #123
 4. Ensure linting passes: `npm run lint`
 5. Update any affected documentation
 6. Request review from maintainers
+ 
+## Branch protection and reviews
+
+This repository uses branch protection to ensure changes to the `main` branch are reviewed and validated before merging. Key points:
+
+- All changes to protected branches must be made via pull requests.
+- Pull requests require at least one approval (this can be adjusted in the repository settings).
+- Approvals are dismissed when new commits are pushed to the PR; the latest push must be approved.
+- Files with designated code owners (see `.github/CODEOWNERS`) require an approval from the owner.
+- CI/status checks (if enabled) must pass before merging and PRs may be required to be up-to-date with `main`.
+
+For repository administrators: see `.github/BRANCH_PROTECTION.md` for step-by-step instructions to configure branch protection rules in the GitHub UI or via the API/CLI.
+
+
+## Pull Request Review Policy
+
+All changes to protected branches (for example `main`) should be made via pull
+requests and must be reviewed before merging. To ensure consistent review and
+quality control we recommend the following repository settings:
+
+- Enable a branch protection rule for `main` that requires pull request
+	reviews before merging.
+- Require at least one approval (or more, for sensitive areas).
+- Require status checks (CI/build/tests) to pass before merging.
+- Enable "Dismiss stale pull request approvals when new commits are pushed".
+- Use a `CODEOWNERS` file (this repository includes `.github/CODEOWNERS`) so
+	responsible owners are automatically requested for review.
+- Optionally, restrict who can push directly to the protected branch so only
+	maintainers can push, and everyone else must use PRs.
+
+See `.github/BRANCH_PROTECTION.md` for step-by-step instructions to enable
+branch protection in the GitHub repository settings.
 
 ## Reporting Issues
 
