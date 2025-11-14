@@ -2,6 +2,14 @@
 
 A comprehensive TypeScript library for mastering Data Structures and Algorithms with detailed LeetCode problem solutions and explanations.
 
+## 🚀 Quick Start
+
+**New here?** Start with the [**Getting Started Guide**](./GETTING_STARTED.md) to learn:
+- How to install and set up the project
+- Recommended learning path (Beginner → Intermediate → Advanced)
+- Common commands and workflows
+- First steps to start coding
+
 ## 🎯 Overview
 
 This repository contains:
@@ -63,7 +71,13 @@ typescript-dsa-leetcode-mastery/
 
 ```
 
-## 🚀 Getting Started
+## � Documentation & Guides
+
+- **[Getting Started](./GETTING_STARTED.md)** — Setup, installation, learning path, and first steps
+- **[Contributing](./CONTRIBUTING.md)** — How to add features, code standards, and PR process
+- **[Documentation Index](./DOCUMENTATION.md)** — Complete guide to all documentation files
+
+## Installation & Setup
 
 ### Prerequisites
 
