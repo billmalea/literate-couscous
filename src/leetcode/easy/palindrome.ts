@@ -10,7 +10,9 @@ export function isPalindrome(x: number): boolean {
   const str = x.toString();
   // Initialize two pointers
   let left = 0;
+
   let right = str.length - 1;
+
   // Check characters from both ends
   while (left < right) {
     if (str[left] !== str[right]) {
