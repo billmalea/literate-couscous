@@ -12,7 +12,7 @@ export { quickSort, quickSortInPlace } from './algorithms/sorting/quick-sort';
 
 // LeetCode Solutions
 export { twoSum, twoSumBruteForce } from './leetcode/easy/two-sum';
-export { isOneBitCharacter } from './leetcode/easy/one-bit-two-bit';
+export { isOneBitCharacter, isOneBitCharacterByTrailingOnes } from './leetcode/easy/one-bit-two-bit';
 
 // Utilities
 export { generateRandomArray, arrayEquals, swap } from './utils/array-utils';
