@@ -21,12 +21,13 @@
 
 export function isOneBitCharacter(bits: number[]): boolean {
   let i = 0;
-  // Only parse until the second-to-last position; we want to see where we stop.
+  // Ticket line scan: stop before the final spot (the last ticket '0').
   while (i < bits.length - 1) {
-    // If current bit starts a two-bit character, jump 2; else jump 1.
+    // If current ticket is '1' (buddy pass), two people go together → move 2.
+    // If it's '0' (solo ticket), one person goes alone → move 1.
     i += bits[i] === 1 ? 2 : 1;
   }
-  // If we stopped exactly at last index, that last bit was never consumed as part of a two-bit char.
+  // If we land exactly on the last index, that last '0' wasn't consumed by a buddy pass → it walks solo.
   return i === bits.length - 1;
 }
 
